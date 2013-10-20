@@ -1,0 +1,44 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lotus\Source\Framework\DrawThread.cs">
+    <Files>
+      <File FileName="Lotus\Source\StaticImage.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\MovableImage.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\Control\ControlElement.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\Movable.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\Ship.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\Weapon.cs" Line="1" Column="1" />
+      <File FileName="Lotus\Source\Framework\BitmapDrawable.cs" Line="30" Column="5" />
+      <File FileName="Lotus\Source\Framework\UpdateThread.cs" Line="25" Column="23" />
+      <File FileName="Lotus\Source\Framework\DrawThread.cs" Line="28" Column="1" />
+      <File FileName="Lotus\Source\Framework\Threadable.cs" Line="13" Column="3" />
+      <File FileName="Lotus\Source\Framework\DrawLayer.cs" Line="26" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Lotus" expanded="True">
+            <Node name="Properties" expanded="True" />
+            <Node name="Source" expanded="True">
+              <Node name="Control" expanded="True" />
+              <Node name="Framework" expanded="True">
+                <Node name="DrawThread.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Lotus AndroidDeviceId-Debug="T065000CTI" MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Holo.NoActionBar.Fullscreen" />
+</Properties>

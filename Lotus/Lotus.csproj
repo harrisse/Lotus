@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24D95102-1F62-4799-A58D-9880F2BCBE79}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Lotus</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>Lotus</AssemblyName>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Source\Bullet.cs" />
+    <Compile Include="Source\Movable.cs" />
+    <Compile Include="Source\MovableImage.cs" />
+    <Compile Include="Source\Player.cs" />
+    <Compile Include="Source\Ship.cs" />
+    <Compile Include="Source\StaticImage.cs" />
+    <Compile Include="Source\Weapon.cs" />
+    <Compile Include="Source\Math\DirectionVector.cs" />
+    <Compile Include="Source\Math\MaxPointVector.cs" />
+    <Compile Include="Source\Math\PointVector.cs" />
+    <Compile Include="Source\Control\ControlButton.cs" />
+    <Compile Include="Source\Control\ControlElement.cs" />
+    <Compile Include="Source\Control\ControlPad.cs" />
+    <Compile Include="Source\Control\IControllable.cs" />
+    <Compile Include="Source\Control\IController.cs" />
+    <Compile Include="Source\Math\IVector.cs" />
+    <Compile Include="Source\Framework\DrawThread.cs" />
+    <Compile Include="Source\Framework\LotusView.cs" />
+    <Compile Include="Source\Framework\MainActivity.cs" />
+    <Compile Include="Source\Framework\Threadable.cs" />
+    <Compile Include="Source\Framework\UpdateThread.cs" />
+    <Compile Include="Source\Framework\BitmapDrawable.cs" />
+    <Compile Include="Source\Framework\IDrawable.cs" />
+    <Compile Include="Source\Framework\IEjectable.cs" />
+    <Compile Include="Source\Framework\IUpdatable.cs" />
+    <Compile Include="Source\Framework\DrawLayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Themes.xml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable\t1.png" />
+    <AndroidResource Include="Resources\drawable\t2.png" />
+    <AndroidResource Include="Resources\drawable\t3.png" />
+    <AndroidResource Include="Resources\drawable\t4.png" />
+    <AndroidResource Include="Resources\drawable\t5.png" />
+    <AndroidResource Include="Resources\drawable\tp1.png" />
+    <AndroidResource Include="Resources\drawable\tp2.png" />
+    <AndroidResource Include="Resources\drawable\tp3.png" />
+    <AndroidResource Include="Resources\drawable\tp4.png" />
+    <AndroidResource Include="Resources\drawable\tp5.png" />
+    <AndroidResource Include="Resources\drawable\controlPad.png" />
+    <AndroidResource Include="Resources\drawable\background.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Source\" />
+    <Folder Include="Source\Math\" />
+    <Folder Include="Source\Control\" />
+    <Folder Include="Source\Framework\" />
+  </ItemGroup>
+</Project>
